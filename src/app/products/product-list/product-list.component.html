@@ -1,0 +1,94 @@
+<div class="row">
+
+    <div class="card-text">
+      <h1><span>6 видов уборки </span>под любую Вашу задачу</h1>
+      <p>Наши услуги подойдут для семейных пар с детьми,<br>
+        владельцев животных, аллергиков, арендодателей
+        </p>
+    </div>
+  <div class="rows-card">
+
+    <div class="card" *ngFor="let item of product">
+      <img src="assets/img/{{item.ImageUrl}}" alt="">
+      <div class="card-body">
+        <h1>{{item.title}}</h1>
+        <p>{{item.name}}</p>
+        <small><span>Время работы: </span>{{item.description}}</small>
+
+
+
+      </div>
+      <div class="btn-card">
+        <button class="btn-text">{{item.btntext}}</button>
+        <button class="btn-text2">{{item.btntext2}}</button>
+        <a href="">Подробнее</a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+<div class="rows">
+
+  <a href=""  class="btn-cards">Не нашли нужный вариант?</a>
+  <h1>Посмотрите дополнительные услуги</h1>
+  <p>Устраним любой каприз в уборке </p>
+
+  <div class="rows-cards">
+
+    <div class="card"  *ngFor=" let product of products">
+      <img src="/assets/card-img/{{product.ImageUrl}}" alt="">
+      <div class="card-body">
+        <h3 >{{product.name}}</h3>
+        <p> - {{product.price}}</p>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="cards">
+    <div class="card-text">
+      <h2>Закажите 3 дополнительные услуги</h2>
+      <p id="text"> и получите четвёртую в подарок</p>
+      <button>Заказать уборку</button>
+    </div>
+    <div class="card-img">
+
+      <img src="/assets/card-img/uc.png" alt="">
+      <img src="/assets/card-img/plus.png" alt="">
+      <img src="/assets/card-img/4.png" alt="">
+    </div>
+  </div>
+
+
+</div>
+<div class="cards-2">
+
+  <div class="card-text">
+    <h1>Хотите приценится? <br>
+      Получите актуальный прайс-лист <br>
+      услуг всего в 1 клик</h1>
+      <p>— Где вам удобнее получить?</p>
+
+      <div class="cards-btn">
+        <a target="_blank" href="https://web.telegram.org/k/"  class="btn-1"><i class="fa-brands fa-telegram"></i></a>
+        <a  href="https://web.whatsapp.com/" target="_blank" class="btn-1"><i class="fa-brands fa-whatsapp"></i></a>
+       <div class="cards-btn-body">
+        <input type="tel" placeholder="Введите ваш телефон"  >
+        <button  class="btn-lefts">Получить расчёт и бонусы</button>
+
+        <div class="checkbox">
+          <input type="checkbox" name="" id=""> <span>Нажимая на кнопку вы соглашаетесь
+            с условиями Политики конфиденциальности</span>
+        </div>
+       </div>
+      </div>
+  </div>
+  <div class="card-img">
+    <img id="img-1" src="/assets/card-img/kitab.png" alt="">
+    <img id="img-2" src="/assets/card-img/ot.png" alt="">
+
+  </div>
+</div>

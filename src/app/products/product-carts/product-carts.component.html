@@ -1,0 +1,46 @@
+<div class="row-card">
+  <div class="card-text">
+   <h1>Наша работа построена</h1>
+    <h3> на профессионализме и честности</h3>
+    <a class="btn-card" href="">Обращаясь за помощью к нам, вы можете быть
+      спокойны за качество и ваш комфорт</a>
+
+  </div>
+
+  <div class="row">
+    <div class="card" *ngFor=" let product of products">
+      <div class="card-img">
+        <img id="img-1" src="assets/card-img/{{product.ImageUrl}}" alt="">
+        <img id="img-2" src="assets/card-img/{{product.ImageUrls}}" alt="">
+      </div>
+
+      <div class="card-body">
+
+        <h1>{{product.title}}</h1>
+        <p>{{product.name}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="cards">
+
+
+    <div class="cards-button">
+      <h1>Оставьте заявку на консультацию <br> и расчёт стоимости БЕСПЛАТНО</h1>
+      <input type="tel" placeholder="Введите ваш телефон">
+      <button class="btn-cards">Жду звонка</button>
+      <div class="checkbox">
+        <input type="checkbox" checked><small>Нажимая на кнопку вы соглашаетесь с условиями Политики
+          конфиденциальности</small>
+
+      </div>
+    </div>
+
+
+      <img src="/assets/img/cart-header.png" alt="">
+      <img src="/assets/img/bubles.png" alt="">
+
+
+
+
+  </div>
+</div>

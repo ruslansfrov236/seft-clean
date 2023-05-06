@@ -1,0 +1,55 @@
+<div class="row-card">
+  <!-- <button (click)="SaveProduct()">SaveProduct</button> -->
+  <div class="card-text">
+    <a class="btn-card" href="">А вы знали?</a>
+    <h1>70% клининговых компаний в СПБ, зачастую подвергают</h1>
+    <h3>своих клиентов рискам и дискомфорту.</h3>
+    <p>И вот некоторые факты, с которыми вы можете столкнуться,
+
+    </p>
+    <p> обращаясь в другие компании:</p>
+  </div>
+
+  <div class="row">
+    <div class="card" *ngFor=" let product of products">
+      <div class="card-img">
+        <img id="img-1" src="assets/card-img/{{product.ImageUrl}}" alt="">
+        <img id="img-2" src="assets/card-img/{{product.ImageUrls}}" alt="">
+      </div>
+
+      <div class="card-body">
+
+        <h1>{{product.title}}</h1>
+        <p>{{product.name}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="rows">
+    <div class="card">
+      <img src="/assets/img/saat.png" alt="">
+      <div class="card-body">
+        <h1>Безответственность персонала</h1>
+        <p>Клинеры приезжают раньше/позже назначенного времени,
+          что доставляет дискомфорт хозяину. Не соблюдают инструктаж
+          владельца квартиры и нарушают бытовой порядок.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+
+      <h1>Друзья, Будьте внимательны!</h1>
+      <p>При выборе клинговой компании и заказе
+        уборки, внимательно читайте договор
+        на оказание услуг
+
+      </p>
+      <p>Посмотреть договор</p>
+
+    </div>
+  </div>
+
+
+
+
+
+</div>

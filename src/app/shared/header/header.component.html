@@ -1,0 +1,28 @@
+ <app-navbar></app-navbar>
+<header (click)="MesajCard()">
+
+   <div class="card">
+
+    <h2>Бережная уборка квартир и домов
+      в СПБ по фиксированной стоимости
+      от 80₽/м² </h2>
+
+    <div class="card-body">
+      <p>Выберите вид уборки, получите точный расчёт стоимости и скидку 10% на первый заказ</p>
+      <div class="btn">
+        <button>Рассчитать стоимость</button>
+        <button>Выбрать вид уборки</button>
+      </div>
+    </div>
+   </div>
+    <div   class="msj-card"  *ngIf="msjcard">
+      <div>
+        <div class="ellipse"></div>
+        <p>Убрано  <span>более 535</span>  объектов</p>
+      </div>
+
+    </div>
+
+
+    </header>
+

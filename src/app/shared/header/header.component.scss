@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+header {
+min-width: 1300px;
+margin:0 auto;
+height: 100vh;
+
+  display: flex;
+
+  clip-path: ellipse( 100% 100% at 50% .1%);
+  background-image: url('/assets/img/header.png');
+  background-size: cover;
+  background-position: center;
+
+
+
+  .card {
+    margin: 16% 20px 0 30px;
+
+    width: 566px;
+    height: 156px;
+
+    h2 {
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+      color: #4B5258;
+    }
+
+    .card-body {
+      line-height: 30px;
+
+      p {
+        font-size: 1.3em;
+        font-family: 'Roboto', sans-serif;
+        color: #4B5258;
+
+      }
+
+      .btn {
+        width: 566px;
+        display: flex;
+        margin:10px 0
+      }
+
+      button {
+        width: 297px;
+        height: 60px;
+        border-radius: 100px;
+        background-color: #43AAFF;
+        box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+        border: 1px solid #43AAFF;
+        color: #fff;
+        font-family: 'Roboto';
+        font-size: 1em;
+        margin: 0;
+        border-radius: 100px;
+
+      }
+
+      button:nth-child(2) {
+        margin:  0 5px  0 10px;
+        width: 265px;
+        height: 60px;
+        color: #fff;
+        font-family: 'Roboto' , sans-serif;
+        font-size: 1em;
+        border: 1px solid #FFC24D;
+        background: #FFC24D;
+        box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+        border-radius: 100px;
+      }
+    }
+  }
+
+
+  .msj-card {
+    position: absolute;
+
+
+    left: 62%;
+    top:65%;
+    width: 190px;
+   padding: 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    .ellipse{
+       position: absolute;
+       left:42%;
+      bottom:80%;
+      border:8px solid #43AAFF;
+       width: 30px;
+       height: 30px ;
+       background-color: #fff;
+       border-radius: 50%;
+
+    }
+    p{
+      font-family:  'Roboto' sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      color: #4B5258;
+      span{
+        color: #43AAFF;
+      }
+    }
+  }
+
+
+}

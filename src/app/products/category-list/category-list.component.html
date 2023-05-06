@@ -1,0 +1,9 @@
+
+
+<ul>
+
+  <li *ngFor="let item of categories"  routerLink="/products/card/{{item.id}}"  >
+    <a  (click)="selectCategories(item)"  [class.active]="item==selectedCategories"  >{{item.name}}</a>
+  </li>
+
+</ul>

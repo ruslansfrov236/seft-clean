@@ -1,0 +1,21 @@
+
+  <div class="item" *ngFor="let item of slider">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ item.ImageUrl }}"  class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.description }}</p>
+        <p>{{item.price}}</p>
+        <p>{{item.room}}</p>
+        <p>{{item.field}}</p>
+        <select class="form-control">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+    </div>
+  </div>
+

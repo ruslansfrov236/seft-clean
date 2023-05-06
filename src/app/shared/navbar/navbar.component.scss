@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+
+  min-width: 1200px;
+  background: linear-gradient(#fff ,#fefeff #f4f8ff , #fcdffe);
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  margin: 0  20px;
+
+  #logo {
+
+    width: 40px;
+
+    object-fit: cover;
+  }
+
+  ul {
+    display: flex;
+    margin: 5px 0;
+    gap: 2em;
+
+    .nav-item {
+
+      color: black;
+
+      .nav-tel {
+        display: block;
+        font-size: 1.2em;
+        font-weight: 'Roboto', sans-serif;
+        color: #4b5258;
+
+
+
+      }
+
+      .nav-link {
+        display: block;
+        font-size: .9em;
+        font-weight: 'Roboto' sans-serif;
+        color: #959A9d;
+        list-style: disc;
+
+        #border {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background-color: #20FF87;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .nav-item:nth-child(2) {
+      width: 250px;
+      margin-right: 50px;
+      display: flex;
+      font-size: 1em;
+      font-family: 'Roboto', sans-serif;
+
+
+      .nav-link:nth-child(1) {
+
+        margin: 0 10px;
+        color: #36acf2;
+      }
+
+      .nav-link:nth-child(2) {
+
+        color: #26AC17;
+      }
+
+      .fa-brands {
+        margin: 5px 0 0 0;
+        font-size: 2.28em;
+      }
+    }
+
+
+
+  }
+
+  .btn-navbar {
+
+    width: 200px;
+    height: 55px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #4B5258;
+    border: 1px solid #43AAFF;
+    border-radius: 100px;
+  }
+}

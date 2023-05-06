@@ -1,0 +1,31 @@
+<main>
+ <div class="section">
+    <ng-template [ngTemplateOutlet]="card"></ng-template>
+  </div>
+  <div class="section body">
+    <category></category>
+  </div>
+
+
+  <app-info></app-info>
+  <product-cart></product-cart>
+  <product-carts></product-carts>
+  <product-list></product-list>
+  <carts-info></carts-info>
+
+</main>
+
+
+<ng-template #card>
+
+
+  <div id="card-section" *ngFor=" let item of products">
+    <div class="card-section">
+
+      <p>{{item.name}}</p>
+      <img src="/assets/section-img/{{item.ImageUrl}}" alt="">
+    </div>
+
+
+  </div>
+</ng-template>
